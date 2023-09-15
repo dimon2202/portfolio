@@ -1,16 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <header></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tech_stack">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social_media">
+        <ul>
+          <li>
+            <a href="#"><img src="/img/github.svg" alt="Github" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/img/twitter.svg" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/img/linkedin.svg" alt="Linkedin" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
-        <h1>Привет, мир!!</h1>
+      <section class="home" id="home">
+        <div class="my_name">
+          <h1>
+            Hi 👋,<br />My name is<br />
+            <span class="pavan_mg">Pavan MG</span>
+            <br />I build things for web
+          </h1>
+        </div>
+        <div class="photo">
+          <img src="./img/profile.jpg" alt="ava" />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about_me">
+          <h2>About Me</h2>
+          <p class="text_about_me">
+            The Generator App is an online tool that helps you to export
+            ready-made templates ready to work as your future website. It helps
+            you to combine slides, panels and other components and export it as
+            a set of static files: HTML/CSS/JS.
+          </p>
+        </div>
+        <div class="work">
+          <h2>Work Experience</h2>
+          <div class="experience">
+            <div class="experience_example">
+              <div class="first_line_example">
+                <div class="position">Junior Web Developer</div>
+                <div class="time_job">Full Time</div>
+              </div>
+              <div class="second_line_example">
+                <div class="second_line_position">
+                  <div class="office">
+                    <img src="./img/office-building.svg" alt="office" />Dr.Rajkumar’s Learning App
+                  </div>
+                  <div class="location">
+                    <img src="./img/location.svg" alt="location" />Bengaluru
+                  </div>
+                </div>
+                <div class="date">
+                  <img src="./img/calendar.svg" alt="date" />Sep 2021 - Dec 2021
+                </div>
+              </div>
+            </div>
+            <div class="experience_example">
+              <div class="first_line_example">
+                <div class="position">Web Development Intern</div>
+                <div class="time_job">Internship</div>
+              </div>
+              <div class="second_line_example">
+                <div class="second_line_position">
+                  <div class="office">
+                    <img
+                      src="./img/office-building.svg"
+                      alt="office"
+                    />IonPixelz Web Solutions
+                  </div>
+                  <div class="location">
+                    <img src="./img/location.svg" alt="location" />Bengaluru
+                  </div>
+                </div>
+                <div class="date">
+                  <img src="./img/calendar.svg" alt="date" />Sep 2021 - Dec 2021
+                </div>
+              </div>
+            </div>
+            <div class="experience_example">
+              <div class="first_line_example">
+                <div class="position">SEO / SEM Specialist</div>
+                <div class="time_job">Internship</div>
+              </div>
+              <div class="second_line_example">
+                <div class="second_line_position">
+                  <div class="office">
+                    <img src="./img/office-building.svg" alt="office" />HAAPS
+                  </div>
+                  <div class="location">
+                    <img src="./img/location.svg" alt="location" />Bengaluru
+                  </div>
+                </div>
+                <div class="date">
+                  <img src="./img/calendar.svg" alt="date" />Sep 2021 - Dec 2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="education">
+          <h2>Education</h2>
+          <div class="experience">
+            <div class="experience_example">
+              <div class="first_line_example">
+                <div class="position">
+                  Bachelor in Electronics & Communication
+                </div>
+                <div class="time_job">Full Time</div>
+              </div>
+              <div class="second_line_example">
+                <div class="second_line_position">
+                  <div class="office">
+                    <img
+                      src="./img/office-building.svg"
+                      alt="office"
+                    />Bangalore Instutute of Technology
+                  </div>
+                </div>
+                <div class="date">
+                  <img src="./img/calendar.svg" alt="date" />Aug 2015 - Dec 2020
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-</body>
+    <footer>
+      <div class="footer_up">
+        <div class="logo">
+          <a href="#"><img src="./img/logo2.svg" alt="logo" /></a>
+        </div>
+        <div class="footer_link">
+          <div class="tel">
+            <a href="#">+91 12345 09876</a>
+          </div>
+          <div class="mail">
+            <a href="#">info@example.com</a>
+          </div>
+          <div class="social_media_footer">
+            <ul>
+              <li>
+                <a href="#"><img src="./img/github.svg" alt="Github" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/twitter.svg" alt="Twitter" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/linkedin.svg" alt="Linkedin" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer_down">
+        <nav class="footer_nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tech Stack</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          Designed and built by<span class="copyright_color"
+            >&nbsp;Pavan MG&nbsp;</span
+          >with<span class="copyright_color">&nbsp;Love&nbsp;</span>&<span
+            class="copyright_color"
+            >&nbsp;Coffee&nbsp;</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
