@@ -215,6 +215,228 @@ ul {
 }
 
 
+.about{
+  width: 1193px;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  justify-content: space-between;
+}
+.about h2{
+  color: #42446E;
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+}
+.text_about_me{
+  width: 708px;
+  margin-top: 38px;
+  color: var(--dark-content, #666);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.experience{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 38px;
+}
+.experience_example{
+  width: 708px;
+  height: 75px;
+}
+.first_line_example{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.position{
+  color: var(--dark-content, #666);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.time_job{
+  color: var(--Button-text, #018C0F);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  width: 84px;
+  height: 24px;
+  border-radius: 100px;
+  background: var(--Button-success, #D7FFE0);
+}
+.second_line_example{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 43px;
+  color: var(--light-Content, #A7A7A7);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.second_line_position{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.office{
+  display: flex;
+  align-items: center;
+}
+.location{
+  display: flex;
+  align-items: center;
+}.date{
+  display: flex;
+  align-items: center;
+}
+#tech_stack{
+  width: 1193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img_skills{
+  display: flex;
+  justify-content: space-between;
+  padding-block-end: 7vh;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+#projects{
+  display: flex;
+  margin: auto;
+  width: 1193px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.my_projects{
+  width: 1193px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.info_project{
+  margin-bottom: 7vh;
+  width: 373px;
+  height: 567px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.info_project img{
+  width: 373px;
+  height: 260px;
+  border-radius: 20px 20px 0px 0px;
+}
+.name_project{
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.text_project{
+  width: 297px;
+  color: var(--dark-content, #666);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+.stack_project{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.tech_stack_pr{
+  color: var(--Solid-Heading, #42446E);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.tech_stack_pr span{
+  color: var(--Solid-Heading, #42446E);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+.link_project{
+  display: flex;
+  align-items: center
+}
+.link_project a{
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+
+.contact{
+  height: 45vh;
+  width: 1193px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact *{
+  color: var(--colors-heading, #1E0E62);
+text-align: center;
+font-family: DM Sans;
+font-size: 58px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px;
+letter-spacing: -1px;
+}
+.contact a{
+  background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 footer {
   padding: 0 10rem;
 }
@@ -318,7 +540,10 @@ footer {
 }
 
 
-
+.link_project img {
+  height: 20px;
+  width: 20px;
+}
 
 
 
@@ -408,7 +633,7 @@ footer {
   }
 
   .position {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 17px;
   }
 
