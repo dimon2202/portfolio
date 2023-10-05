@@ -10,42 +10,66 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#tech_stack">Tech Stack</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social_media">
-        <ul>
-          <li>
-            <a href="https://github.com/dimon2202"><img src="/img/github.svg" alt="Github" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/img/twitter.svg" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/dimon4ik/"><img src="/img/linkedin.svg" alt="Linkedin" /></a>
-          </li>
-        </ul>
+      <div>
+        <div class="logo">
+          <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech_stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social_media">
+          <ul>
+            <li>
+              <a href="https://github.com/dimon2202"
+                ><img src="/img/github.svg" alt="Github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://t.me/dimasik2202"
+                ><img src="/img/tg.svg" alt="telegram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dimon4ik/"
+                ><img src="/img/linkedin.svg" alt="Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <section class="top-nav">
+          <input id="check-menu" type="checkbox" />
+          <label for="check-menu">MENU &nbsp;&nbsp;&nbsp;</label>
+          <div class="burger-line first"></div>
+          <div class="burger-line second"></div>
+          <div class="burger-line third"></div>
+          <div class="burger-line fourth"></div>
+          <ul class="main-menu">
+            <li><a style="color: #666" ; href="#home">Home</a></li>
+            <li><a style="color: #666" ; href="#about">About</a></li>
+            <li><a style="color: #666" ; href="#tech_stack">Stack</a></li>
+            <li><a style="color: #666" ; href="#projects">Projects</a></li>
+            <li><a style="color: #666" ; href="#contact">Contact</a></li>
+          </ul>
+        </section>
       </div>
     </header>
-    <main>
+
+    <main class="container">
       <section class="home" id="home">
         <div class="my_name">
           <h1>
             Hi 👋,<br />My name is<br />
-            <span class="pavan_mg">Sidenko Dmytro</span>
+            <span class="gradient">Sidenko Dmytro</span>
             <br />I build things for web
           </h1>
         </div>
@@ -53,14 +77,16 @@
           <img src="./img/profile.svg" alt="ava" />
         </div>
       </section>
+
       <section class="about" id="about">
         <div class="about_me">
           <h2>About Me</h2>
           <p class="text_about_me">
-            The Generator App is an online tool that helps you to export
-            ready-made templates ready to work as your future website. It helps
-            you to combine slides, panels and other components and export it as
-            a set of static files: HTML/CSS/JS.
+            I'm driven to expand my React.js skills for dynamic and interactive
+            interfaces.I understand HTML, CSS, and JavaScript and want to use
+            them for responsive web apps. I'm a fast learner with a design eye,
+            committed to delivering exceptional user experiences on cutting-edge
+            projects.
           </p>
         </div>
         <div class="work">
@@ -80,7 +106,7 @@
                     />Dr.Rajkumar’s Learning App
                   </div>
                   <div class="location">
-                    <img src="./img/location.svg" alt="location" />Bengaluru
+                    <img src="./img/location.svg" alt="location" />Kyiv
                   </div>
                 </div>
                 <div class="date">
@@ -102,11 +128,11 @@
                     />IonPixelz Web Solutions
                   </div>
                   <div class="location">
-                    <img src="./img/location.svg" alt="location" />Bengaluru
+                    <img src="./img/location.svg" alt="location" />Kyiv
                   </div>
                 </div>
                 <div class="date">
-                  <img src="./img/calendar.svg" alt="date" />Sep 2021 - Dec 2021
+                  <img src="./img/calendar.svg" alt="date" />Dec 2021 - May 2022
                 </div>
               </div>
             </div>
@@ -121,11 +147,11 @@
                     <img src="./img/office-building.svg" alt="office" />HAAPS
                   </div>
                   <div class="location">
-                    <img src="./img/location.svg" alt="location" />Bengaluru
+                    <img src="./img/location.svg" alt="location" />Kyiv
                   </div>
                 </div>
                 <div class="date">
-                  <img src="./img/calendar.svg" alt="date" />Sep 2021 - Dec 2021
+                  <img src="./img/calendar.svg" alt="date" />May 2022 - Aug 2023
                 </div>
               </div>
             </div>
@@ -136,28 +162,25 @@
           <div class="experience">
             <div class="experience_example">
               <div class="first_line_example">
-                <div class="position">
-                  Bachelor in Electronics & Communication
-                </div>
+                <div class="position">Computer Science</div>
                 <div class="time_job">Full Time</div>
               </div>
               <div class="second_line_example">
                 <div class="second_line_position">
                   <div class="office">
-                    <img
-                      src="./img/office-building.svg"
-                      alt="office"
-                    />Bangalore Instutute of Technology
+                    <img src="./img/office-building.svg" alt="office" />Kyiv
+                    National Economic University named after Vadym Hetman
                   </div>
                 </div>
                 <div class="date">
-                  <img src="./img/calendar.svg" alt="date" />Aug 2015 - Dec 2020
+                  <img src="./img/calendar.svg" alt="date" />Aug 2021 - now
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="about" id="tech_stack">
         <div class="about_me">
           <h2>My Tech Stack</h2>
@@ -182,6 +205,7 @@
           </div>
         </div>
       </section>
+
       <section class="about" id="projects">
         <div class="about_me">
           <h2>Projects</h2>
@@ -190,11 +214,11 @@
         <div class="my_projects">
           <div class="info_project">
             <div><img src="./img/sneakers_app.png" alt="Rectangle" /></div>
-            <div class="name_project">Project Tile goes here</div>
+            <div class="name_project">Project "Shopping"</div>
             <div class="text_project">
-              This is sample project description random things are here in
-              description This is sample project lorem ipsum generator for dummy
-              content
+              The website is an online store for sneakers. Users can browse a
+              collection of sneakers, view pricing and product details, add
+              items to a shopping cart, and checkout.
             </div>
             <div class="stack_project">
               <div class="tech_stack_pr">
@@ -202,21 +226,25 @@
               </div>
               <div class="link_project">
                 <img src="./img/icon_link.svg" alt="icon_link" />
-                <a href="https://react-sneakers-zeta.vercel.app/">&nbsp;Live Preview</a>
+                <a href="https://react-sneakers-zeta.vercel.app/"
+                  >Live Preview</a
+                >
               </div>
               <div class="link_project">
                 <img src="./img/github-small.svg" alt="github-small" />
-                <a href="https://github.com/dimon2202/react-sneakers">&nbsp;View Code</a>
+                <a href="https://github.com/dimon2202/react-sneakers"
+                  >View Code</a
+                >
               </div>
             </div>
           </div>
           <div class="info_project">
             <div><img src="./img/delicious_app.png" alt="Rectangle" /></div>
-            <div class="name_project">Project Tile goes here</div>
+            <div class="name_project">Project "Deliciousss"</div>
             <div class="text_project">
-              This is sample project description random things are here in
-              description This is sample project lorem ipsum generator for dummy
-              content
+              The React-based web application that allows users to search and
+              filter through a database of recipes. Leveraged the Spoonacular
+              API to fetch recipe data.
             </div>
             <div class="stack_project">
               <div class="tech_stack_pr">
@@ -224,21 +252,25 @@
               </div>
               <div class="link_project">
                 <img src="./img/icon_link.svg" alt="icon_link" />
-                <a href="https://react-deliciousss.vercel.app/recipe/715495">&nbsp;Live Preview</a>
+                <a href="https://react-deliciousss.vercel.app/recipe/715495"
+                  >Live Preview</a
+                >
               </div>
               <div class="link_project">
                 <img src="./img/github-small.svg" alt="github-small" />
-                <a href="https://github.com/dimon2202/react-deliciousss">&nbsp;View Code</a>
+                <a href="https://github.com/dimon2202/react-deliciousss"
+                  >View Code</a
+                >
               </div>
             </div>
           </div>
           <div class="info_project">
             <div><img src=".//img/news_app.png" alt="Rectangle" /></div>
-            <div class="name_project">Project Tile goes here</div>
+            <div class="name_project">Project "News Pulse"</div>
             <div class="text_project">
-              This is sample project description random things are here in
-              description This is sample project lorem ipsum generator for dummy
-              content
+              A viewing and tracking current news, providing convenient
+              pagination and filtering by various categories. It also provides
+              the ability to interact with various services.
             </div>
             <div class="stack_project">
               <div class="tech_stack_pr">
@@ -246,50 +278,57 @@
               </div>
               <div class="link_project">
                 <img src="./img/icon_link.svg" alt="icon_link" />
-                <a href="https://news-react-beige.vercel.app/">&nbsp;Live Preview</a>
+                <a href="https://news-react-beige.vercel.app/">Live Preview</a>
               </div>
               <div class="link_project">
                 <img src="./img/github-small.svg" alt="github-small" />
-                <a href="https://github.com/dimon2202/news-react">&nbsp;View Code</a>
+                <a href="https://github.com/dimon2202/news-react">View Code</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="contact" id="contact">
         <div>For any questions please mail us:</div>
-        <a href="mailto:hi@pavanmg.in">hi@pavanmg.in</a>
+        <a href="mailto:sidenkodima2202@gmail.com">sidenkodima2202@gmail.com</a>
       </section>
     </main>
-    <footer>
-      <div class="footer_up">
+    <footer class="container">
+      <div class="footer_up wrapper">
         <div class="logo">
           <a href="#"><img src="./img/logo2.svg" alt="logo" /></a>
         </div>
         <div class="footer_link">
           <div class="tel">
-            <a href="#">+91 12345 09876</a>
+            <a href="#">+38 095 504 6502</a>
           </div>
           <div class="mail">
-            <a href="#">info@example.com</a>
+            <a href="#">sidenkodima2202@gmail.com</a>
           </div>
           <div class="social_media_footer">
             <ul>
               <li>
-                <a href="https://github.com/dimon2202"><img src="./img/github.svg" alt="Github" /></a>
+                <a href="https://github.com/dimon2202"
+                  ><img src="./img/github.svg" alt="Github"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="./img/twitter.svg" alt="Twitter" /></a>
+                <a href="https://t.me/dimasik2202"
+                  ><img src="./img/tg.svg" alt="Tg"
+                /></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/dimon4ik/"><img src="./img/linkedin.svg" alt="Linkedin" /></a>
+                <a href="https://www.linkedin.com/in/dimon4ik/"
+                  ><img src="./img/linkedin.svg" alt="Linkedin"
+                /></a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="line"></div>
-      <div class="footer_down">
+      <div class="footer_down wrapper">
         <nav class="footer_nav">
           <ul>
             <li><a href="#">Home</a></li>
