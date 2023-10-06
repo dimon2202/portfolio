@@ -309,6 +309,7 @@ ul {
 }
 
 .stack_project {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 25px;
@@ -554,6 +555,22 @@ footer {
     height: 74.4px;
   }
 
+  .info_project {
+    width: 420px;
+    height: 520px;
+  }
+
+  .info_project img {
+    width: 420px;
+    height: 240px;
+  }
+
+  .link_project img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
   .contact * {
     font-size: 38px;
     line-height: 43.4px;
@@ -760,8 +777,8 @@ footer {
 
   .top-nav {
     display: flex;
-    width: 150px;
-    background-color: #e5e4e4;
+    width: 33%;
+    background-color: #ffffff;
     position: relative;
     color: #666666;
     text-align: center;
@@ -785,7 +802,7 @@ footer {
   .top-nav .burger-line {
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 0;
     width: 35px;
     height: 5px;
     background-color: #666666;
@@ -814,11 +831,11 @@ footer {
   .top-nav a {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 10px 3px;
     color: white;
     text-decoration: none;
-    border-top: 1px solid rgb(225, 225, 225);
-    background-color: #ececec;
+    border-top: 1px solid rgb(112, 111, 111);
+    background-color: #e1e1e1;
   }
 
   #check-menu:checked ~ .main-menu {
@@ -838,19 +855,57 @@ footer {
     display: none;
   }
 
-  /*  */
-
-  .social_media {
-    width: 80px;
+  .main-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px;
   }
 
-  .office{
+  .top-nav .main-menu li a:focus {
+    display: none;
+  }
+
+  /* #check-menu:checked ~ .main-menu,
+  :target ~ .main-menu {
+      max-height: 500px;
+      font-size: 16px;
+  }
+
+  :target ~ .main-menu {
+    max-height: 0;
+    font-size: 0;
+} */
+
+
+  /*  */
+
+  .header .social_media {
+    width: 105px;
+  }
+
+  .office {
     line-height: 13px
   }
 
   .my_projects {
     flex-direction: column;
   }
+
+  .info_project {
+    width: 430px;
+    height: 520px;
+  }
+
+  .info_project img {
+    width: 430px;
+    height: 240px;
+  }
+
+  .link_project img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
 
   .contact * {
     font-size: 24px;
@@ -909,22 +964,21 @@ footer {
   #projects,
   .my_projects,
   .about,
-  .text_about_me,
-  .experience_example {
-    width: 75%;
+  .text_about_me {
+    width: 90%;
   }
 
-  .home {
-    flex-direction: column;
+  .header div {
+    height: 60px;
   }
 
   .home {
     height: 100%;
+    flex-direction: column;
     flex-direction: column-reverse;
     margin: 20px auto;
   }
   .my_name h1 {
-    width: 350px;
     text-align: center;
     font-size: 26px;
     line-height: 30px;
@@ -935,48 +989,124 @@ footer {
     line-height: 30px;
   }
   .about {
-    width: 350px;
     text-align: center;
   }
   .text_about_me {
-    width: 350px;
-    text-align: center;
+    width: 100%;
+   margin: 10px auto;
   }
+
   .experience_example {
-    width: 350px;
+    width: 100%;
+    text-align: start;
+}
+
+.position {
+  font-size: 14px;
+}
+  .second_line_example{
+    flex-direction: column;
   }
-  #tech_stack {
-    width: 350px;
+
+  .second_line_position {
+    width: 100%;
+    flex-direction: column;
   }
+
+  .date{
+    line-height: 13px
+  }
+
+  .experience_example {
+    height: 110px;
+  }
+
+
+  
+
   .img_skills {
     justify-content: center;
   }
-  #projects {
-    width: 350px;
+
+  .img_skills {
+    gap: 50px;
   }
+
+  .img_skills img {
+    width: 50px;
+    height: 50px;
+  }
+
   .my_projects {
-    width: 350px;
+    width: 100%;
     justify-content: space-evenly;
   }
-  .contact {
-    width: 350px;
+
+  .info_project {
+    width: 100%;
+    height: 520px;
   }
-  footer {
-    width: 350px;
-    margin: 0 auto;
-    padding: 0;
+
+  .info_project img {
+    width: 100%;
+    height: 240px;
   }
-  .footer_nav ul {
-    display: none;
+
+  .link_project img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
   }
+
+  .text_project {
+    width: 90%;
+    font-size: 14px;
+    text-align: start;
+}
+
+.tech_stack_pr {
+  font-size: 12px;
+  line-height: 13px;
+  margin-bottom: 5px;
+  text-align: start;
+  width: 100%;
+}
+
+.tech_stack_pr span {
+  font-size: 12px;
+  line-height: 0;
+  
+}
+
+.link_project a {
+  font-size: 14px;
+}
+
+  .contact * {
+    font-size: 20px;
+  }
+  
+    
   .footer_link {
-    gap: 10px;
+    flex-direction: column;
+    gap: 3px;
   }
   .social_media_footer ul {
-    width: 60px;
+    width: 70px;
     margin: 0;
   }
   .footer_down {
+    margin: 30px 0 20px 0;
     justify-content: center;
+  }
+
+  
+  .footer_nav ul {
+    width: 90%;
+    gap: 2px;
+    font-size: 10px;
+  }
+  .copyright, .copyright_color {
+    font-size: 9px;
   }
 }
