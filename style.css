@@ -5,6 +5,13 @@
   --desscript: #666666;
   --border: #eee;
   --my_name: #42446e;
+  --bg_project: #fff;
+  --project_name: #000000;
+  --project_description: #666666;
+  --project_stack: #42446E;
+  --project_links: #000;
+  --contact: #1E0E62;
+
 }
 
 .dark {
@@ -15,6 +22,13 @@
   --svg_img: invert(70%) sepia(35%) saturate(0%) hue-rotate(200deg) brightness(89%) contrast(92%);
   --border: #232323;
   --my_name: #D9D9D9;
+  --bg_project: #363636;
+  --project_name: #cccccc;
+  --project_description: #cccccc;
+  --project_stack: #cccccc;
+  --project_links: #fff;
+  --icons_links: invert(100%) sepia(0%) saturate(7500%) hue-rotate(46deg) brightness(116%) contrast(112%);
+  --contact: #D9D9D9;
 }
 
 * {
@@ -57,6 +71,7 @@ body {
   border-bottom: 2px solid var(--border);
   top: 0;
   position: sticky;
+  z-index: 100;
 }
 
 .header > div {
@@ -247,7 +262,7 @@ body {
 }
 
 .position {
-  color: #666;
+  color: var(--nav);
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
@@ -307,6 +322,7 @@ body {
 .date {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 #tech_stack {
@@ -323,6 +339,12 @@ body {
   flex-wrap: wrap;
   gap: 100px;
 }
+
+.img_skill {
+  filter: var(--icons_links);
+}
+
+
 
 #projects {
   display: flex;
@@ -346,7 +368,7 @@ body {
   width: 373px;
   height: 567px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bg_project);
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -362,7 +384,7 @@ body {
 }
 
 .name_project {
-  color: #000;
+  color: var(--project_name);
   text-align: center;
   font-family: Poppins;
   font-size: 28px;
@@ -373,7 +395,7 @@ body {
 
 .text_project {
   width: 297px;
-  color: var(--dark-content, #666);
+  color: var(--project_description);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -391,7 +413,7 @@ body {
 }
 
 .tech_stack_pr {
-  color: var(--Solid-Heading, #42446e);
+  color: var(--project_stack);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -400,7 +422,7 @@ body {
 }
 
 .tech_stack_pr span {
-  color: var(--Solid-Heading, #42446e);
+  color: var(--project_stack);
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -414,7 +436,7 @@ body {
 }
 
 .link_project a {
-  color: #000;
+  color: var(--project_links);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -424,6 +446,8 @@ body {
 }
 
 .link_project img {
+  filter: var(--icons_links);
+  position: static; 
   height: 20px;
   width: 20px;
   margin-right: 10px;
@@ -440,7 +464,7 @@ body {
 }
 
 .contact * {
-  color: var(--colors-heading, #1e0e62);
+  color: var(--contact);
   text-align: center;
   font-family: DM Sans;
   font-size: 58px;
@@ -476,6 +500,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.footer_up .logo {
+  filter: var(--svg_img);
+}
+
 .footer_link {
   display: flex;
   align-items: center;
@@ -485,7 +513,7 @@ footer {
 .tel a {
   width: 149px;
   height: 16.5px;
-  color: #42446e;
+  color: var(--project_stack);
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -496,7 +524,7 @@ footer {
 .mail a {
   width: 206.7px;
   height: 16.5px;
-  color: #42446e;
+  color: var(--project_stack);
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -513,6 +541,7 @@ footer {
 }
 
 .social_media_footer img {
+  filter: var(--svg_img);
   width: 30px;
   height: 30px;
 }
@@ -532,7 +561,6 @@ footer {
   gap: 52px;
   display: flex;
   justify-content: space-between;
-  color: #42446e;
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -541,11 +569,11 @@ footer {
 }
 
 .footer_nav ul a {
-  color: #666;
+  color: var(--nav);
 }
 
 .copyright {
-  color: #666;
+  color: var(--nav);
   text-align: center;
   font-family: Poppins;
   font-size: 18px;
@@ -577,7 +605,7 @@ footer {
     width: 900px;
   }
 
-  .header > div {
+  .header > * {
     height: 100px;
     gap: 40px;
   }
@@ -588,7 +616,7 @@ footer {
 
   .nav ul {
     gap: 31px;
-    width: 530px;
+    width: 500px;
     font-size: 16.4px;
   }
 
@@ -851,7 +879,7 @@ footer {
   .top-nav {
     display: flex;
     width: 33%;
-    background-color: #ffffff;
+    background-color: var(--white);
     position: relative;
     color: #666666;
     text-align: center;
