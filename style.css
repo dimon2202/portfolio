@@ -616,9 +616,13 @@ footer {
     width: 900px;
   }
 
+  .header > div {
+    gap: 30px;
+  }
+
   .header > * {
     height: 100px;
-    gap: 40px;
+  
   }
 
   .logo, .logo img {
