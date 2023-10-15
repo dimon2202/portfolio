@@ -3,6 +3,7 @@
   --blue_name: #42446e;
   --nav: #666666;
   --desscript: #666666;
+  --svg_img: invert(44%) sepia(1%) saturate(3434%) hue-rotate(327deg) brightness(85%) contrast(80%);
   --border: #eee;
   --my_name: #42446e;
   --bg_project: #fff;
@@ -11,7 +12,7 @@
   --project_stack: #42446E;
   --project_links: #000;
   --contact: #1E0E62;
-
+  --time_job: #D7FFE0;
 }
 
 .dark {
@@ -29,6 +30,7 @@
   --project_links: #fff;
   --icons_links: invert(100%) sepia(0%) saturate(7500%) hue-rotate(46deg) brightness(116%) contrast(112%);
   --contact: #D9D9D9;
+  --time_job: #badfbd;
 }
 
 * {
@@ -110,7 +112,6 @@ body {
 .header .social_media {
   display: flex;
   justify-content: space-between;
-  width: 130px;
 }
 
 .social_media ul {
@@ -126,14 +127,21 @@ body {
   height: 30px;
 }
 
-.top-nav {
+/* .top-nav {
+  display: none;
+} */
+#check {
+  display: none;
+}
+
+.icons img {
   display: none;
 }
 
 /* Dark mode btn */
 
 .dark-mode-btn {
-  /* order: 9; */
+  order: 9;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -272,7 +280,7 @@ body {
 }
 
 .time_job {
-  color: #018c0f;
+  color: #018C0F;
   text-align: center;
   font-family: Poppins;
   font-size: 9px;
@@ -282,7 +290,7 @@ body {
   width: 84px;
   height: 24px;
   border-radius: 100px;
-  background: #d7ffe0;
+  background: var(--time_job);
 }
 
 .second_line_example {
@@ -322,7 +330,10 @@ body {
 .date {
   display: flex;
   align-items: center;
-  gap: 5px;
+}
+
+.date img {
+  margin: 0 3px;
 }
 
 #tech_stack {
@@ -610,7 +621,7 @@ footer {
     gap: 40px;
   }
 
-  .logo img {
+  .logo, .logo img {
     width: 70px;
   }
 
@@ -726,21 +737,23 @@ footer {
 
   .header > div {
     height: 80px;
-    gap: 30px;
+    gap: 20px;
   }
 
-  .logo img {
+  .logo, .logo img {
     width: 60px;
   }
 
+  
+
   .nav ul {
     gap: 31px;
-    width: 430px;
+    width: 390px;
     font-size: 14px;
   }
 
   .social_media ul {
-    width: 105px;
+    width: 95px;
     height: 27px;
   }
 
@@ -868,15 +881,14 @@ footer {
   }
 
   .header .logo {
-    width: 100px;
-  }
-  .header .nav {
-    display: none;
+    width: 60px;
   }
 
-  /*  */
+  
 
-  .top-nav {
+  /* Menu */
+
+  /* .top-nav {
     display: flex;
     width: 33%;
     background-color: var(--white);
@@ -939,6 +951,10 @@ footer {
     background-color: #e1e1e1;
   }
 
+  .dark-mode-btn {
+    order: 0;
+  }
+
   #check-menu:checked ~ .main-menu {
     max-height: 500px;
     font-size: 16px;
@@ -965,16 +981,83 @@ footer {
     display: none;
   }
 
-  /* #check-menu:checked ~ .main-menu,
-  :target ~ .main-menu {
-      max-height: 500px;
-      font-size: 16px;
+  */
+
+  /* SECOND */
+
+  /* .header .nav {
+    display: none;
+  } */
+
+  .icons {
+    order: 10;
+    padding: auto 0;
   }
 
-  :target ~ .main-menu {
-    max-height: 0;
-    font-size: 0;
-} */
+  .icons img {
+    display: inline-flex;
+    width: 35px;
+    filter: var(--svg_img);
+    cursor: pointer;
+  }
+
+  #menu-icon {
+    margin-top: 5px;
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  .header .nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    /* box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+  #check:checked~.nav {
+    height: 230px;
+  }
+
+  .header .nav ul {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav > ul > li {
+    margin: 16px;
+  }
+
+  .nav > ul > li > a {
+    font-size: 17px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .3s ease;
+    --i: 0;
+  }
+
+  #check:checked~ .nav > ul > li > a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i));
+  }
 
 
   /*  */
@@ -1073,6 +1156,10 @@ footer {
     height: 60px;
   }
 
+  .header .social_media {
+    width: 90px;
+  }
+
   .home {
     height: 100%;
     flex-direction: column;
@@ -1091,6 +1178,7 @@ footer {
   }
   .about {
     text-align: center;
+    gap: 20px;
   }
   .text_about_me {
     width: 100%;
@@ -1149,7 +1237,8 @@ footer {
   }
 
   .info_project img {
-    width: 100%;
+    /* width: 100%; */
+    width: 90vw;
     height: 240px;
   }
 
